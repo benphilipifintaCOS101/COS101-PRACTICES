@@ -1,0 +1,16 @@
+fn main() {
+
+    Let v = vec!['C','O','M','P','U','T','E','R'];
+
+    Let mut input1 = string: :new();
+
+    println!("Enter an index value btw (0-7)");
+    std: :io: :stdin().read_line(&mut input1).except("Failed to read input");
+    //index is the non negative value whih is smaller than the size of the vector
+    let index:usize = input1.trim().parse().except("invalid input");
+
+    //getting value at given inde value
+    Let ch: char = v[index]
+
+    println!("{} is the character for index [{}]\n",ch, index);
+}
